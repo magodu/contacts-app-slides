@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xp-run-server-url="https://xpla.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Routing</title>
+    <script src="https://xpla.org/static/js/slide_loader.3.0.0.js"></script>
+</head>
+
+<body class="xp-slide">
+    <div class="xp-row with-comments">
+        <div class="xp-column">
+            <xp-editor active="config.js">
+                <script id="config.js" highlight="1-4" type="application/octetstream" src="002/config.js"></script>
+                <script id="index.html" highlight="1-4" type="application/octetstream" src="002/index.html"></script>
+                <script id="src/app.component.css" highlight="1-4" type="application/octetstream" src="002/src/app.component.css"></script>
+                <script id="src/app.component.html" highlight="1-5,7-15" type="application/octetstream" src="002/src/app.component.html"></script>
+                <script id="src/app.component.ts" highlight="6-12" type="application/octetstream" src="002/src/app.component.ts"></script>
+                <script id="src/app.module.ts" highlight="1-21" type="application/octetstream" src="002/src/app.module.ts"></script>
+                <script id="src/app.routing.ts" highlight="1-18" type="application/octetstream" src="002/src/app.routing.ts"></script>
+                <script id="src/contact.component.css" highlight="1-9" type="application/octetstream" src="002/src/contact.component.css"></script>
+                <script id="src/contact.component.html" highlight="1-5,25-35" type="application/octetstream" src="002/src/contact.component.html"></script>
+                <script id="src/contact.component.ts" highlight="1-8,14-44" type="application/octetstream" src="002/src/contact.component.ts"></script>
+                <script id="src/contacts-list.component.css" highlight="1-4" type="application/octetstream" src="002/src/contacts-list.component.css"></script>
+                <script id="src/contacts-list.component.html" highlight="1-18,20-24" type="application/octetstream" src="002/src/contacts-list.component.html"></script>
+                <script id="src/contacts-list.component.ts" highlight="1-3,27-32,35-38" type="application/octetstream" src="002/src/contacts-list.component.ts"></script>
+                <script id="src/main.ts" highlight="1-5" type="application/octetstream" src="002/src/main.ts"></script>
+                <script id="src/shared/contact.service.ts" highlight="40-43" type="application/octetstream" src="002/src/shared/contact.service.ts"></script>
+                <script id="src/shared/contact.ts" highlight="1-3" type="application/octetstream" src="002/src/shared/contact.ts"></script>
+                <script id="src/shared/contacts.json" highlight="1-5,87-91" type="application/octetstream" src="002/src/shared/contacts.json"></script>
+                <script id="src/shared/us-phone.pipe.ts" highlight="41-45" type="application/octetstream" src="002/src/shared/us-phone.pipe.ts"></script>
+                <script id="style.css" highlight="1-27" type="application/octetstream" src="002/style.css"></script>
+            </xp-editor>
+        </div>
+        <div class="xp-resize-column"></div>
+        <div class="xp-column">
+            <xp-preview runner="html"></xp-preview>
+        </div>
+    </div>
+    <div class="xp-resize-row"></div>
+    <div class="xp-row comments">
+        <xp-annotations>
+            <header>
+                <h1>Routing</h1></header>
+            <details>
+                <p>The browser is a familiar model of application navigation:</p>
+                <ul>
+                    <li>Enter a URL in the address bar and the browser navigates to a corresponding page.</li>
+                    <li>Click links on the page and the browser navigates to a new page.</li>
+                    <li>Click the browser's back and forward buttons and the browser navigates backward and forward through the history of pages you've seen.</li>
+                </ul>
+                <p>
+                    The Angular Router ("the router") borrows from this model. 
+                    It can interpret a browser URL as an instruction to navigate to a client-generated view. 
+                    It can pass optional parameters along to the supporting view component that help it decide what specific content to present. 
+                    You can bind the router to links on a page and it will navigate to the appropriate application view when the user clicks a link. 
+                    You can navigate imperatively when the user clicks a button, selects from a drop box, or in response to some other stimulus from any source. 
+                    And the router logs activity in the browser's history journal so the back and forward buttons work as well.
+                </p>
+            </details>
+        </xp-annotations>
+    </div>
+</body>
+
+</html>

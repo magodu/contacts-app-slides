@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xp-run-server-url="https://xpla.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Adding functionality</title>
+    <script src="https://xpla.org/static/js/slide_loader.3.0.0.js"></script>
+</head>
+
+<body class="xp-slide">
+    <div class="xp-row with-comments">
+        <div class="xp-column">
+            <xp-editor active="config.js">
+                <script id="config.js" highlight="1-5" type="application/octetstream" src="005/config.js"></script>
+                <script id="index.html" highlight="4-9" type="application/octetstream" src="005/index.html"></script>
+                <script id="src/app.component.css" highlight="1-74" type="application/octetstream" src="005/src/app.component.css"></script>
+                <script id="src/app.component.html" highlight="5-35" type="application/octetstream" src="005/src/app.component.html"></script>
+                <script id="src/app.component.ts" highlight="1-7,10-24" type="application/octetstream" src="005/src/app.component.ts"></script>
+                <script id="src/app.module.ts" highlight="1-7" type="application/octetstream" src="005/src/app.module.ts"></script>
+                <script id="src/main.ts" highlight="1-5" type="application/octetstream" src="005/src/main.ts"></script>
+                <script id="src/shared/contact.ts" highlight="1-9" type="application/octetstream" src="005/src/shared/contact.ts"></script>
+                <script id="style.css" highlight="1-2" type="application/octetstream" src="005/style.css"></script>
+            </xp-editor>
+        </div>
+        <div class="xp-resize-column"></div>
+        <div class="xp-column">
+            <xp-preview runner="html"></xp-preview>
+        </div>
+    </div>
+    <div class="xp-resize-row"></div>
+    <div class="xp-row comments">
+        <xp-annotations>
+            <header>
+                <h1>Adding functionality</h1></header>
+            <details>
+                <p>Now we'll see how to bind data from the component to the view.</p>
+                <p>Structural directives are introduced here as well. This directives modify the DOM.</p>
+                <p>There are structural directives by default:</p>
+                <ul>
+                    <li>ngIf</li>
+                    <li>ngFor</li>
+                    <li>ngSwitch</li>
+                </ul>
+                <p>Also, we can create our own structural directives.</p>
+            </details>
+        </xp-annotations>
+    </div>
+</body>
+
+</html>

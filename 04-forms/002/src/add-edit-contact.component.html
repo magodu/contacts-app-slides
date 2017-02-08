@@ -1,0 +1,100 @@
+<!-- 99/ Add some fields to AddEditContactComponent form -->
+
+<div class="edit-container">
+    <div class="contact-title">
+        <span *ngIf="mode == 'new'">Create Contact</span>
+        <span *ngIf="mode == 'edit'">Edit Contact</span>
+    </div>
+    <div class="edit-wrapper">
+        <!-- 89/ This is a plain form. It doesn't work for the moment -->
+        <form class="form-horizontal">
+            <div class="form-data">
+                <div class="form-group col-sm-12">
+                    <label for="image" class="col-sm-4 control-label">Image</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" name="image">
+                    </div>
+                </div>
+                <div class="form-group col-sm-12">
+                    <label for="name" class="col-sm-4 control-label">Name<span>*</span></label>
+                    <div class="col-sm-8">
+                        <input type="text"
+                               class="form-control"
+                               name="name"
+                        >
+                    </div>
+                </div>
+                <div class="form-group col-sm-12">
+                    <label for="surname" class="col-sm-4 control-label">Surname<span>*</span></label>
+                    <div class="col-sm-8">
+                        <input type="text"
+                               class="form-control"
+                               name="surname"
+                        >
+                    </div>
+                </div>
+                <div class="form-group col-sm-12">
+                    <label for="address" class="col-sm-4 control-label">Address</label>
+                    <div class="col-sm-8">
+                        <input type="text"
+                               class="form-control"
+                               name="address"
+                        >
+                    </div>
+                </div>
+                <div class="form-group col-sm-12">
+                    <label for="zipcode" class="col-sm-4 control-label">Zip code</label>
+                    <div class="col-sm-8">
+                        <input type="text"
+                               class="form-control"
+                               name="zipcode"
+                        >
+                    </div>
+                </div>
+                <div class="form-group col-sm-12">
+                    <label for="city" class="col-sm-4 control-label">City</label>
+                    <div class="col-sm-8">
+                        <input type="text"
+                               class="form-control"
+                               name="city"
+                        >
+                    </div>
+                </div>
+                <div class="form-group col-sm-12">
+                    <label for="phone" class="col-sm-4 control-label">Phone</label>
+                    <div class="col-sm-8">
+                        <input type="text"
+                               class="form-control"
+                               name="phone"
+                        >
+                    </div>
+                </div>
+                <div class="form-group col-sm-12">
+                    <label for="email" class="col-sm-4 control-label">Email</label>
+                    <div class="col-sm-8">
+                        <input type="text"
+                               class="form-control"
+                               name="email"
+                        >
+                    </div>
+                </div>
+                <div class="form-group col-sm-12">
+                    <div class="col-sm-offset-4 col-sm-8">
+                        <div class="checkbox">
+                            <label class="control-label">
+                                <input type="checkbox"
+                                       name="favorite"
+                                       value="true"
+                                > Favorite
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="actions">
+                <button type="button" class="button" (click)="onCancel()"> Cancel</button>
+                <button type="button" class="button"> Accept</button>
+            </div>
+        </form>
+    </div>
+</div>

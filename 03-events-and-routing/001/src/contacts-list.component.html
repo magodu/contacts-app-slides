@@ -1,0 +1,24 @@
+<!-- 23/ ContactsList Component. Events -->
+
+<div class="contacts-wrapper">
+    <div class="contact-title">Contacts</div>
+    <div class="actions">
+        <div class="action-item"><img src="https://s25.postimg.org/rok6qu5j3/add_contact.png" alt="Add contact" ></div>
+        <!-- click event. Bind a function or expression -->
+        <div class="action-item"><img src="https://s25.postimg.org/cjo2tbhbz/search.png" alt="Search contact" (click)="toggleFilters()"></div>
+    </div>
+    <ul class="collection">
+        <li class="collection-item" *ngFor="let contact of contacts; let i = index">
+            <div class="item">
+                <div class="image"><img src="{{contact.image}}" alt="" class="circle"></div>
+                <div class="title"><span>{{contact.name}} {{contact.surname}}</span></div>
+                 <!-- ngClass property. If the expression is true add the specified class  -->
+                <div class="favorite" [ngClass]="{'active': contact.favorite}" (click)="setFavorite()"></div>
+            </div>
+        </li>
+    </ul>
+    <div class="footer">
+        Total contacts: {{contacts.length}}
+    </div>
+</div>
+

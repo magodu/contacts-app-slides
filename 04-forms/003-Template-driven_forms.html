@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xp-run-server-url="https://xpla.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Template-driven forms</title>
+    <script src="https://xpla.org/static/js/slide_loader.3.0.0.js"></script>
+</head>
+
+<body class="xp-slide">
+    <div class="xp-row with-comments">
+        <div class="xp-column">
+            <xp-editor active="config.js">
+                <script id="config.js" highlight="1-4" type="application/octetstream" src="003/config.js"></script>
+                <script id="index.html" highlight="1-4" type="application/octetstream" src="003/index.html"></script>
+                <script id="src/add-edit-contact.component.css" highlight="1-4" type="application/octetstream" src="003/src/add-edit-contact.component.css"></script>
+                <script id="src/add-edit-contact.component.html" highlight="1-61,65-71,75-81,85-105,110-116,119-126" type="application/octetstream" src="003/src/add-edit-contact.component.html"></script>
+                <script id="src/add-edit-contact.component.ts" highlight="1-9,14-20,54-85" type="application/octetstream" src="003/src/add-edit-contact.component.ts"></script>
+                <script id="src/app.component.css" highlight="3-6" type="application/octetstream" src="003/src/app.component.css"></script>
+                <script id="src/app.component.html" highlight="8-11" type="application/octetstream" src="003/src/app.component.html"></script>
+                <script id="src/app.component.ts" highlight="9-13" type="application/octetstream" src="003/src/app.component.ts"></script>
+                <script id="src/app.module.ts" highlight="1-8,12-22" type="application/octetstream" src="003/src/app.module.ts"></script>
+                <script id="src/app.routing.ts" highlight="1-4" type="application/octetstream" src="003/src/app.routing.ts"></script>
+                <script id="src/contact.component.css" highlight="1-4" type="application/octetstream" src="003/src/contact.component.css"></script>
+                <script id="src/contact.component.html" highlight="9-15" type="application/octetstream" src="003/src/contact.component.html"></script>
+                <script id="src/contact.component.ts" highlight="2-8" type="application/octetstream" src="003/src/contact.component.ts"></script>
+                <script id="src/contacts-list.component.css" highlight="1-4" type="application/octetstream" src="003/src/contacts-list.component.css"></script>
+                <script id="src/contacts-list.component.html" highlight="17-19" type="application/octetstream" src="003/src/contacts-list.component.html"></script>
+                <script id="src/contacts-list.component.ts" highlight="1-6" type="application/octetstream" src="003/src/contacts-list.component.ts"></script>
+                <script id="src/main.ts" highlight="1-5" type="application/octetstream" src="003/src/main.ts"></script>
+                <script id="src/shared/contact.service.ts" highlight="1-6,41-65" type="application/octetstream" src="003/src/shared/contact.service.ts"></script>
+                <script id="src/shared/contact.ts" highlight="1-3" type="application/octetstream" src="003/src/shared/contact.ts"></script>
+                <script id="src/shared/contacts.json" highlight="1-4" type="application/octetstream" src="003/src/shared/contacts.json"></script>
+                <script id="src/shared/us-phone.pipe.ts" highlight="2-8" type="application/octetstream" src="003/src/shared/us-phone.pipe.ts"></script>
+                <script id="style.css" highlight="1-4" type="application/octetstream" src="003/style.css"></script>
+            </xp-editor>
+        </div>
+        <div class="xp-resize-column"></div>
+        <div class="xp-column">
+            <xp-preview runner="html"></xp-preview>
+        </div>
+    </div>
+    <div class="xp-resize-row"></div>
+    <div class="xp-row comments">
+        <xp-annotations>
+            <header>
+                <h1>Angular 2 Forms</h1></header>
+            <details>
+                <p>Forms are one the most crucial aspect in a web application. Angular 2 has a good forms support.</p>
+                <p>There are two ways to build forms in Angular 2:</p>
+                <ul>
+                    <li><b>Template-driven forms:</b> the form logic is in the template. It's recommended for simple forms.</li>
+                    <li><b>Model-driven forms:</b> all form logic is in the component. They are more powerful, keeps the template clean and allows more complex logic and validations. All the form have to be built programatically.</b></li>
+                </ul>
+                <p>We'll see both, starting with the template-driven way.</p>
+            </details>
+        </xp-annotations>
+    </div>
+</body>
+
+</html>

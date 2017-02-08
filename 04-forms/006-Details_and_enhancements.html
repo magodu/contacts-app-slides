@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xp-run-server-url="https://xpla.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Details and enhancements</title>
+    <script src="https://xpla.org/static/js/slide_loader.3.0.0.js"></script>
+</head>
+
+<body class="xp-slide">
+    <div class="xp-row with-comments">
+        <div class="xp-column">
+            <xp-editor active="config.js">
+                <script id="config.js" highlight="1-4" type="application/octetstream" src="006/config.js"></script>
+                <script id="index.html" highlight="13-20" type="application/octetstream" src="006/index.html"></script>
+                <script id="src/add-edit-contact.component.css" highlight="1-4" type="application/octetstream" src="006/src/add-edit-contact.component.css"></script>
+                <script id="src/add-edit-contact.component.html" highlight="1-4" type="application/octetstream" src="006/src/add-edit-contact.component.html"></script>
+                <script id="src/add-edit-contact.component.ts" highlight="103-109,115-120,125-130,136-141" type="application/octetstream" src="006/src/add-edit-contact.component.ts"></script>
+                <script id="src/app.component.css" highlight="1-4" type="application/octetstream" src="006/src/app.component.css"></script>
+                <script id="src/app.component.html" highlight="1-4" type="application/octetstream" src="006/src/app.component.html"></script>
+                <script id="src/app.component.ts" highlight="1-7" type="application/octetstream" src="006/src/app.component.ts"></script>
+                <script id="src/app.module.ts" highlight="1-6" type="application/octetstream" src="006/src/app.module.ts"></script>
+                <script id="src/app.routing.ts" highlight="2-8,10-12" type="application/octetstream" src="006/src/app.routing.ts"></script>
+                <script id="src/contact.component.css" highlight="1-4" type="application/octetstream" src="006/src/contact.component.css"></script>
+                <script id="src/contact.component.html" highlight="10-27" type="application/octetstream" src="006/src/contact.component.html"></script>
+                <script id="src/contact.component.ts" highlight="1-5,13-20,42-52" type="application/octetstream" src="006/src/contact.component.ts"></script>
+                <script id="src/contacts-list.component.css" highlight="1-4" type="application/octetstream" src="006/src/contacts-list.component.css"></script>
+                <script id="src/contacts-list.component.html" highlight="1-4" type="application/octetstream" src="006/src/contacts-list.component.html"></script>
+                <script id="src/contacts-list.component.ts" highlight="1-5,29-38,41-47" type="application/octetstream" src="006/src/contacts-list.component.ts"></script>
+                <script id="src/main.ts" highlight="1-5" type="application/octetstream" src="006/src/main.ts"></script>
+                <script id="src/shared/contact.service.ts" highlight="1-4,38-49,57-67" type="application/octetstream" src="006/src/shared/contact.service.ts"></script>
+                <script id="src/shared/contact.ts" highlight="1-3" type="application/octetstream" src="006/src/shared/contact.ts"></script>
+                <script id="src/shared/contacts.json" highlight="1-5" type="application/octetstream" src="006/src/shared/contacts.json"></script>
+                <script id="src/shared/us-phone.pipe.ts" highlight="1-5" type="application/octetstream" src="006/src/shared/us-phone.pipe.ts"></script>
+                <script id="style.css" highlight="1-4" type="application/octetstream" src="006/style.css"></script>
+            </xp-editor>
+        </div>
+        <div class="xp-resize-column"></div>
+        <div class="xp-column">
+            <xp-preview runner="html"></xp-preview>
+        </div>
+    </div>
+    <div class="xp-resize-row"></div>
+    <div class="xp-row comments">
+        <xp-annotations>
+            <header>
+                <h1>Details and enhancements</h1></header>
+            <details>
+                <p>Now the application it's almost finished, but we can improve some things:</p>
+                <ul>
+                    <li><b>Add Lodash library:</b> A very useful <a href="https://lodash.com/" target="_blank">JS library</a>.</li>
+                    <li><b>Default value:</b> In ContactComponent we can add a default value in case that any value was empty.</li>
+                    <li><b>OnDestroy Lifehook:</b> Another life hook ( like OnInit) that can be used to remove a suscription when the component is not used, and prevent memory leaks.</li>
+                    <li><b>getContact function refactor:</b>  We was using the id as index, but this is not a good practice if ids changes.</li>
+                </ul>
+            </details>
+        </xp-annotations>
+    </div>
+</body>
+
+</html>

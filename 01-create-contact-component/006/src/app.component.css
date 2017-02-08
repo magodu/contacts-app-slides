@@ -1,0 +1,8 @@
+/* 8/ Move contact CSS to its own CSS file */
+
+.contacts-container .app-title {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+
+}

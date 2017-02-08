@@ -1,0 +1,7 @@
+/* 6/ AppComponent CSS. This CSS only affects to this component  */
+.contacts-container .app-title {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+
+}

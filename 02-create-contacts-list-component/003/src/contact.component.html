@@ -1,0 +1,27 @@
+<div class="detail-container">
+    <div class="contact-title">Contact detail</div>
+    <div class="detail-wrapper">
+        <div class="image">
+            <img src="{{contactSelected.image}}" alt="">
+            <div class="name">{{contactSelected.name}} {{contactSelected.surname}}</div>
+        </div>
+        <div class="favorite-icon">
+            <img src="https://s25.postimg.org/p9sb6epa7/contactFavoriteEnabled.png" alt="favorite contact" *ngIf="contactSelected.favorite">
+            <img src="https://s25.postimg.org/ii1w3k0an/contactFavoriteDisabled.png" alt="favorite contact" *ngIf="!contactSelected.favorite">
+        </div>
+        <div class="data">
+            <dl>
+                <dt>Address</dt>
+                <dd>{{contactSelected.address}}</dd>
+                <dt>Zipcode</dt>
+                <dd>{{contactSelected.zipcode}}</dd>
+                <dt>City</dt>
+                <dd>{{contactSelected.city}}</dd>
+                <dt>Phone</dt>
+                <dd>{{contactSelected.phone | usPhone}}</dd>
+                <dt>Email</dt>
+                <dd>{{contactSelected.email}}</dd>
+            </dl>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xp-run-server-url="https://xpla.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Change detection</title>
+    <script src="https://xpla.org/static/js/slide_loader.3.0.0.js"></script>
+</head>
+
+<body class="xp-slide">
+    <div class="xp-row with-comments">
+        <div class="xp-column">
+            <xp-editor active="config.js">
+                <script id="config.js" highlight="1-4" type="application/octetstream" src="004/config.js"></script>
+                <script id="index.html" highlight="1-5" type="application/octetstream" src="004/index.html"></script>
+                <script id="src/app.component.css" highlight="1-4" type="application/octetstream" src="004/src/app.component.css"></script>
+                <script id="src/app.component.html" highlight="8-11" type="application/octetstream" src="004/src/app.component.html"></script>
+                <script id="src/app.component.ts" highlight="1-5" type="application/octetstream" src="004/src/app.component.ts"></script>
+                <script id="src/app.module.ts" highlight="1-7" type="application/octetstream" src="004/src/app.module.ts"></script>
+                <script id="src/app.routing.ts" highlight="7-10" type="application/octetstream" src="004/src/app.routing.ts"></script>
+                <script id="src/contact.component.css" highlight="4-10" type="application/octetstream" src="004/src/contact.component.css"></script>
+                <script id="src/contact.component.html" highlight="1-4" type="application/octetstream" src="004/src/contact.component.html"></script>
+                <script id="src/contact.component.ts" highlight="1-4,32-37" type="application/octetstream" src="004/src/contact.component.ts"></script>
+                <script id="src/contacts-list.component.css" highlight="1-4" type="application/octetstream" src="004/src/contacts-list.component.css"></script>
+                <script id="src/contacts-list.component.html" highlight="15-20" type="application/octetstream" src="004/src/contacts-list.component.html"></script>
+                <script id="src/contacts-list.component.ts" highlight="1-38" type="application/octetstream" src="004/src/contacts-list.component.ts"></script>
+                <script id="src/main.ts" highlight="1-5" type="application/octetstream" src="004/src/main.ts"></script>
+                <script id="src/shared/contact.service.ts" highlight="1-3,8-13,40-48" type="application/octetstream" src="004/src/shared/contact.service.ts"></script>
+                <script id="src/shared/contact.ts" highlight="1-3" type="application/octetstream" src="004/src/shared/contact.ts"></script>
+                <script id="src/shared/contacts.json" highlight="11-17" type="application/octetstream" src="004/src/shared/contacts.json"></script>
+                <script id="src/shared/us-phone.pipe.ts" highlight="1-4" type="application/octetstream" src="004/src/shared/us-phone.pipe.ts"></script>
+                <script id="style.css" highlight="1-4" type="application/octetstream" src="004/style.css"></script>
+            </xp-editor>
+        </div>
+        <div class="xp-resize-column"></div>
+        <div class="xp-column">
+            <xp-preview runner="html"></xp-preview>
+        </div>
+    </div>
+    <div class="xp-resize-row"></div>
+    <div class="xp-row comments">
+        <xp-annotations>
+            <header>
+                <h1>Change detection</h1></header>
+            <details>
+                <h3>What’s Change Detection anyways?</h3>
+                <p>The basic task of change detection is to take the internal state of a program and make it somehow visible to the user interface. This state can be any kind of objects, arrays, primitives, … just any kind of JavaScript data structures.</p>
+                <h3>What causes change?</h3>
+                <p>Basically application state change can be caused by three things</p>
+                <ul>
+                    <li>Events - click, submit, …</li>
+                    <li>XHR - Fetching data from a remote server</li>
+                    <li>Timers - setTimeout(), setInterval()</li>
+                </ul>
+                <p>In other cases, we have to notify Angular that something has changed. Let's see it.</p>
+            </details>
+        </xp-annotations>
+    </div>
+</body>
+
+</html>

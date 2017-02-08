@@ -1,0 +1,17 @@
+<!-- 16/ AddEditContactComponent basic HTML -->
+
+<div class="edit-container">
+    <div class="contact-title">
+        <span *ngIf="mode == 'new'">Create Contact</span>
+        <span *ngIf="mode == 'edit'">Edit Contact</span>
+    </div>
+    <div class="edit-wrapper">
+        <form name="contactForm" class="form-horizontal">
+            
+            <div class="actions">
+                <button type="button" class="button" (click)="onCancel()"> Cancel</button>
+                <button type="button" class="button"> Accept</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xp-run-server-url="https://xpla.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Http and observables</title>
+    <script src="https://xpla.org/static/js/slide_loader.3.0.0.js"></script>
+</head>
+
+<body class="xp-slide">
+    <div class="xp-row with-comments">
+        <div class="xp-column">
+            <xp-editor active="config.js">
+                <script id="config.js" highlight="1-6" type="application/octetstream" src="003/config.js"></script>
+                <script id="index.html" highlight="1-4,19-25" type="application/octetstream" src="003/index.html"></script>
+                <script id="src/app.component.css" highlight="1-4" type="application/octetstream" src="003/src/app.component.css"></script>
+                <script id="src/app.component.html" highlight="1-11" type="application/octetstream" src="003/src/app.component.html"></script>
+                <script id="src/app.component.ts" highlight="6-12" type="application/octetstream" src="003/src/app.component.ts"></script>
+                <script id="src/app.module.ts" highlight="1-19" type="application/octetstream" src="003/src/app.module.ts"></script>
+                <script id="src/contact.component.css" highlight="1-4" type="application/octetstream" src="003/src/contact.component.css"></script>
+                <script id="src/contact.component.html" highlight="8-14" type="application/octetstream" src="003/src/contact.component.html"></script>
+                <script id="src/contact.component.ts" highlight="1-6,10-28" type="application/octetstream" src="003/src/contact.component.ts"></script>
+                <script id="src/contacts-list.component.css" highlight="1-4" type="application/octetstream" src="003/src/contacts-list.component.css"></script>
+                <script id="src/contacts-list.component.html" highlight="14-20" type="application/octetstream" src="003/src/contacts-list.component.html"></script>
+                <script id="src/contacts-list.component.ts" highlight="1-32" type="application/octetstream" src="003/src/contacts-list.component.ts"></script>
+                <script id="src/main.ts" highlight="2-5" type="application/octetstream" src="003/src/main.ts"></script>
+                <script id="src/shared/contact.service.ts" highlight="1-51" type="application/octetstream" src="003/src/shared/contact.service.ts"></script>
+                <script id="src/shared/contact.ts" highlight="1-3" type="application/octetstream" src="003/src/shared/contact.ts"></script>
+                <script id="src/shared/contacts.json" highlight="1-89" type="application/octetstream" src="003/src/shared/contacts.json"></script>
+                <script id="src/shared/us-phone.pipe.ts" highlight="1-4" type="application/octetstream" src="003/src/shared/us-phone.pipe.ts"></script>
+                <script id="style.css" highlight="1-3" type="application/octetstream" src="003/style.css"></script>
+            </xp-editor>
+        </div>
+        <div class="xp-resize-column"></div>
+        <div class="xp-column">
+            <xp-preview runner="html"></xp-preview>
+        </div>
+    </div>
+    <div class="xp-resize-row"></div>
+    <div class="xp-row comments">
+        <xp-annotations>
+            <header>
+                <h1>Http and observables</h1></header>
+            <details>
+                <p>Making HTTP requests is a vital operation in the life of most front-end applications. Angular 2 has a really cool way of doing that.</p>
+                <p>Observables are similar to promises but with major differences that make them better.</p>
+                <p>To understand the differences between promises and observables deeper, you can watch this <a href="https://egghead.io/lessons/rxjs-rxjs-observables-vs-promises">video</a></p>
+            </details>
+        </xp-annotations>
+    </div>
+</body>
+
+</html>

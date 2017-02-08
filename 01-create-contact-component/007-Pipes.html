@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xp-run-server-url="https://xpla.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Pipes</title>
+    <script src="https://xpla.org/static/js/slide_loader.3.0.0.js"></script>
+</head>
+
+<body class="xp-slide">
+    <div class="xp-row with-comments">
+        <div class="xp-column">
+            <xp-editor active="config.js">
+                <script id="config.js" highlight="1-5" type="application/octetstream" src="007/config.js"></script>
+                <script id="index.html" highlight="1-5" type="application/octetstream" src="007/index.html"></script>
+                <script id="src/app.component.css" highlight="1-3" type="application/octetstream" src="007/src/app.component.css"></script>
+                <script id="src/app.component.html" highlight="1-3,5-10" type="application/octetstream" src="007/src/app.component.html"></script>
+                <script id="src/app.component.ts" highlight="1-3" type="application/octetstream" src="007/src/app.component.ts"></script>
+                <script id="src/app.module.ts" highlight="1-20" type="application/octetstream" src="007/src/app.module.ts"></script>
+                <script id="src/contact.component.css" highlight="1-3" type="application/octetstream" src="007/src/contact.component.css"></script>
+                <script id="src/contact.component.html" highlight="1-3,18-25" type="application/octetstream" src="007/src/contact.component.html"></script>
+                <script id="src/contact.component.ts" highlight="1-10,13-23" type="application/octetstream" src="007/src/contact.component.ts"></script>
+                <script id="src/main.ts" highlight="1-5" type="application/octetstream" src="007/src/main.ts"></script>
+                <script id="src/shared/contact.ts" highlight="1-3" type="application/octetstream" src="007/src/shared/contact.ts"></script>
+                <script id="src/shared/us-phone.pipe.ts" highlight="1-47" type="application/octetstream" src="007/src/shared/us-phone.pipe.ts"></script>
+                <script id="style.css" highlight="1-3" type="application/octetstream" src="007/style.css"></script>
+            </xp-editor>
+        </div>
+        <div class="xp-resize-column"></div>
+        <div class="xp-column">
+            <xp-preview runner="html"></xp-preview>
+        </div>
+    </div>
+    <div class="xp-resize-row"></div>
+    <div class="xp-row comments">
+        <xp-annotations>
+            <header>
+                <h1>Advanced: Pipes</h1>
+            </header>
+            <details>
+                <p>Pipes are helpful for formatting output in our templates.</p>
+                <p>Many of the pipes provided by Angular 2 will be familiar if you've worked with filters in Angular 1.x.</p>
+                <p>Pipes are accessed in our templates in the same way that filters were: with the "pipe" character |</p>
+                <p>You can see the pipes provided by Angular 2 <a href="https://angular.io/docs/ts/latest/api/#!?query=pipe">in the Angular 2 website</a></p>
+                <p>We can build our own custom Pipes. We'll see how to build a custom pipe to format an US phone number.</p>
+            </details>
+        </xp-annotations>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xp-run-server-url="https://xpla.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Basic component</title>
+    <script src="https://xpla.org/static/js/slide_loader.3.0.0.js"></script>
+</head>
+
+<body class="xp-slide">
+    <div class="xp-row with-comments">
+        <div class="xp-column">
+            <xp-editor active="config.js">
+                <script id="config.js" highlight="1-44" type="application/octetstream" src="001/config.js"></script>
+                <script id="index.html" highlight="1-26" type="application/octetstream" src="001/index.html"></script>
+                <script id="src/app.component.css" highlight="1-6" type="application/octetstream" src="001/src/app.component.css"></script>
+                <script id="src/app.component.html" highlight="1-13" type="application/octetstream" src="001/src/app.component.html"></script>
+                <script id="src/app.component.ts" highlight="1-13" type="application/octetstream" src="001/src/app.component.ts"></script>
+                <script id="src/app.module.ts" highlight="1-26" type="application/octetstream" src="001/src/app.module.ts"></script>
+                <script id="src/contact.component.css" highlight="1-76" type="application/octetstream" src="001/src/contact.component.css"></script>
+                <script id="src/contact.component.html" highlight="1-27" type="application/octetstream" src="001/src/contact.component.html"></script>
+                <script id="src/contact.component.ts" highlight="1-22" type="application/octetstream" src="001/src/contact.component.ts"></script>
+                <script id="src/contacts-list.component.css" highlight="1-106" type="application/octetstream" src="001/src/contacts-list.component.css"></script>
+                <script id="src/contacts-list.component.html" highlight="1-21" type="application/octetstream" src="001/src/contacts-list.component.html"></script>
+                <script id="src/contacts-list.component.ts" highlight="1-39" type="application/octetstream" src="001/src/contacts-list.component.ts"></script>
+                <script id="src/main.ts" highlight="1-5" type="application/octetstream" src="001/src/main.ts"></script>
+                <script id="src/shared/contact.ts" highlight="1-3" type="application/octetstream" src="001/src/shared/contact.ts"></script>
+                <script id="src/shared/us-phone.pipe.ts" highlight="1-45" type="application/octetstream" src="001/src/shared/us-phone.pipe.ts"></script>
+                <script id="style.css" highlight="1-3" type="application/octetstream" src="001/style.css"></script>
+            </xp-editor>
+        </div>
+        <div class="xp-resize-column"></div>
+        <div class="xp-column">
+            <xp-preview runner="html"></xp-preview>
+        </div>
+    </div>
+    <div class="xp-resize-row"></div>
+    <div class="xp-row comments">
+        <xp-annotations>
+            <header>
+                <h1>Basic component</h1></header>
+            <details>
+                <p>Now we are going to create another component to show a list of products.</p>
+                <p>For the moment this component won't be functional, (our components can't interact among them).</p>
+                <p>Also, this component only will show harcoded data.</p>
+            </details>
+        </xp-annotations>
+    </div>
+</body>
+
+</html>
