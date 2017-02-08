@@ -10,7 +10,7 @@ Once it's installed, to run it:
 
 
 ----------------
-#4/ Minimun requirements
+#4/ Minimum requirements
 
 We need to have installed in our laptop:
 1. NodeJS  > v4.0
