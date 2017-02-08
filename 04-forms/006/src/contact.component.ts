@@ -1,3 +1,5 @@
+//order: 2
+
 // Import OnDestroy life hook
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from "rxjs/Rx";

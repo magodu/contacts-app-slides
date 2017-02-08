@@ -1,3 +1,5 @@
+//order: 1
+
 // 24/ New Contact component. Basically we have moved the class code we had in AppComponent
 // Import OnInit from @angular/core 
 import { Component, OnInit } from '@angular/core';

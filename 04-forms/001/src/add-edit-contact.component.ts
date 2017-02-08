@@ -1,3 +1,5 @@
+//order: 1
+
 // 13/ AddEditContactComponent component
 
 import { Component, OnInit } from '@angular/core';

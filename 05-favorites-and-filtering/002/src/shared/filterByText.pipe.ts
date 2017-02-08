@@ -1,3 +1,5 @@
+//order: 1
+
 // 24/ Pipe for text filtering
 
 import {Pipe, PipeTransform } from '@angular/core';

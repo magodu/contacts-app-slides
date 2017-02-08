@@ -1,3 +1,5 @@
+//order: 1
+
 // New  contacts list component
 
 // 2/ Imports

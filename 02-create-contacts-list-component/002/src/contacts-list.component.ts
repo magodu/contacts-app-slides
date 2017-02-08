@@ -1,3 +1,5 @@
+//order: 4
+
 // 30/ ContactsList component
 
 import { Component, OnInit} from '@angular/core';

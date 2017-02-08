@@ -1,3 +1,5 @@
+//order: 4
+
 // Contact component needs to catch the id param passed in the url  
 import { Component, OnInit } from '@angular/core';
 // 2/ New imports

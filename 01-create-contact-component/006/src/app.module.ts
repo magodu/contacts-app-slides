@@ -1,3 +1,5 @@
+// order: 5
+
 // This procces will be automatic if the component is created with Angular CLI:
 // 8/ Use "ng generate component contact"  or  "ng g c contact"
 

@@ -1,3 +1,5 @@
+//order: 5
+
 import { Routes, RouterModule } from "@angular/router";
 
 import { ContactComponent } from './contact.component';

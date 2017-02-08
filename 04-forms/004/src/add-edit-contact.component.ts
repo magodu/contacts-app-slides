@@ -1,3 +1,5 @@
+//order: 3
+
 import { Component, OnInit } from '@angular/core';
 import { Contact } from "./shared/contact";
 import { Subscription } from "rxjs/Rx";

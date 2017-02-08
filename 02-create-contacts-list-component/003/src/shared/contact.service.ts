@@ -1,3 +1,5 @@
+//order: 2
+
 import { Injectable } from '@angular/core';
 import { Contact } from "./contact";
 // 2/ Import libraries for http communication

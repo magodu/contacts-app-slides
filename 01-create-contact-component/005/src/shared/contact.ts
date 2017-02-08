@@ -1,3 +1,5 @@
+//order: 1
+
 // 6/ Create class Contact.
 // Contact will be another type like string, boolean or number primitive types.
 // This will define the type Contact we'll use to create our contacts

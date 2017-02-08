@@ -1,3 +1,5 @@
+//order: 4
+
 import {NgModule} from '@angular/core'
 import {BrowserModule} from '@angular/platform-browser'
 

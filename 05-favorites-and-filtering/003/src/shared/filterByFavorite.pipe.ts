@@ -1,3 +1,5 @@
+//order: 1
+
 // 20/ Pipe for favorite filtering
 
 import {Pipe, PipeTransform } from '@angular/core';

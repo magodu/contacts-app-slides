@@ -1,3 +1,5 @@
+//order: 2
+
 // Import OnInit from @angular/core
 import { Component, OnInit } from '@angular/core';
 // Import Contact class

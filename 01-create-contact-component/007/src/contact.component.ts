@@ -1,3 +1,5 @@
+// order: 3
+
 // 24/ Import USPhonePipe in the component
 
 import { Component, OnInit } from '@angular/core';

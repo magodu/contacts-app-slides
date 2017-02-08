@@ -1,3 +1,5 @@
+//order: 2
+
 import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
  
 import { Contact } from "./shared/contact";

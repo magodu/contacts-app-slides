@@ -1,3 +1,5 @@
+// order: 2
+
 // 40/ ContactsList Component. Events
 
 import { Component, OnInit} from '@angular/core';

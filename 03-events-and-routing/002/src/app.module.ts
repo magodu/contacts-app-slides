@@ -1,3 +1,5 @@
+//order: 2
+
 import {NgModule} from '@angular/core'
 import {BrowserModule} from '@angular/platform-browser'
 import { HttpModule } from '@angular/http';
