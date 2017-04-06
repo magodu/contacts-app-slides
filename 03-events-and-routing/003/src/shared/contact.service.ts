@@ -1,7 +1,9 @@
 //order: 1
 
-// Import EventEmitter
-import { Injectable, EventEmitter } from '@angular/core';
+import { Injectable } from '@angular/core';
+
+// Import BehaviorSubject
+import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { Http, Response } from "@angular/http";
 import 'rxjs/Rx';
 
@@ -11,9 +13,14 @@ import { Contact } from "./contact";
 @Injectable()
 export class ContactService {
     
-    // 3/ Declare var of EventEmitter class.
+    // 3/ Declare var of BehaviorSubject class.
+    // Behavior Subject is a type of subject, a subject is a special type of observable,
+    // so you can subscribe to messages like any other observable
+    // More info about subjects: https://netbasal.com/understanding-subjects-in-rxjs-55102a190f3
+    
     // It will send data of Contact type
-    pushedData = new EventEmitter<Contact[]>();
+    pushedDataEvent = new BehaviorSubject<Contact[]>([]);
+    pushedDataEv$ = this.pushedDataEvent.asObservable();
 
     private contacts: Contact[] = [];
     private endpoint: string = 'src/shared/contacts.json';
@@ -48,7 +55,7 @@ export class ContactService {
     
     // 3/ This function communicates two sibling components 
     pushData() {
-        this.pushedData.emit(this.contacts);
+        this.pushedDataEvent.next(this.contacts);
     }
 
 } 

@@ -31,7 +31,7 @@ export class ContactComponent implements OnInit, OnDestroy {
     }
 
     ngOnInit() {
-        this.contactService.pushedData.subscribe(
+        this.contactService.pushedDataEv$.subscribe(
             (contacts: Contact[]) => {
                 this.contactSelected = this.contactService.getContact(this.contactIndex);
             }

@@ -59,7 +59,7 @@ export class AddEditContactComponent implements OnInit {
     // 27/ Submit function. It receives a NgForm object
     onSubmit(form: NgForm) {
         // Note: Take a look to form object in the console to get familiar with it
-
+        console.log('form', form);
         // Store the form values in a var 
         let newContact = form.value;
 

@@ -1,4 +1,5 @@
-import { Injectable, EventEmitter } from '@angular/core'; 
+import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { Http, Response } from "@angular/http";
 import 'rxjs/Rx';
 
@@ -8,7 +9,8 @@ import { Contact } from "./contact";
 @Injectable()
 export class ContactService {
     
-    pushedData = new EventEmitter<Contact[]>();
+    pushedDataEvent = new BehaviorSubject<Contact[]>([]);
+    pushedDataEv$ = this.pushedDataEvent.asObservable();
 
     private contacts: Contact[] = [];
     private endpoint: string = 'src/shared/contacts.json';
@@ -57,7 +59,7 @@ export class ContactService {
     }
     
     pushData() {
-        this.pushedData.emit(this.contacts);
+        this.pushedDataEvent.next(this.contacts);
     }
 
 }

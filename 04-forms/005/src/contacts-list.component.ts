@@ -30,7 +30,7 @@ export class ContactsListComponent implements OnInit {
         );
         
         // 8/ Subscription to know when the component needs to be updated
-        this.contactService.pushedData.subscribe(
+        this.contactService.pushedDataEv$.subscribe(
             (contacts: Contact[]) => {
                 this.contacts = contacts;
 

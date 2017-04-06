@@ -38,7 +38,7 @@ export class ContactComponent implements OnInit {
         // The component have to wait until service load data and ContactsList component notify this fact.
         // 6/ When ContactsList component receives data and call to the service, this one emits an event
         // and this subscrition catch it.
-        this.contactService.pushedData.subscribe(
+        this.contactService.pushedDataEv$.subscribe(
             (contacts: Contact[]) => {
                 this.contactSelected = this.contactService.getContact(this.contactIndex);
             }
