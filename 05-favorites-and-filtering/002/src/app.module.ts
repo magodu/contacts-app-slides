@@ -15,7 +15,7 @@ import { USPhonePipe } from "./shared/us-phone.pipe";
 // Import FilterByTextPipe
 import { FilterByTextPipe } from "./shared/filterByText.pipe";
 
-// 19/ Add FilterByTextPipe to NgModule metadata
+// 19/ Add FilterByTextPipe to NgModule decorator
 @NgModule({
     imports: [
         BrowserModule,

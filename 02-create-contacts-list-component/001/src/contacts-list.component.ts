@@ -6,7 +6,7 @@
 import { Component, OnInit} from '@angular/core';
 import { Contact } from "./shared/contact";
 
-// 6/ Component metadata
+// 6/ Component decorator
 @Component({
     // Define the selector for our new component. Remember: unique
 	selector: 'app-contacts-list',

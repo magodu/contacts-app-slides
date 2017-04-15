@@ -14,7 +14,7 @@ import { FilterByTextPipe } from "./shared/filterByText.pipe";
 // Import FilterByFavoritePipe
 import { FilterByFavoritePipe } from "./shared/filterByFavorite.pipe";
 
-// 19/ Add FilterByFavoritePipe to NgModule metadata
+// 19/ Add FilterByFavoritePipe to NgModule decorator
 @NgModule({
     imports: [                  
         BrowserModule,

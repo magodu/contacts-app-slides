@@ -5,7 +5,7 @@
 import {Pipe, PipeTransform } from '@angular/core';
 
 
-// 4/ Pipe metadata
+// 4/ Pipe decorator
 @Pipe({
     name: 'filterByText',
     pure: false               // explanation: http://stackoverflow.com/questions/34456430/ngfor-doesnt-update-data-with-pipe-in-angular2

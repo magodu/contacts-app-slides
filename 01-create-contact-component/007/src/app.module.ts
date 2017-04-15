@@ -8,7 +8,7 @@ import { ContactComponent } from './contact.component';
 // Import USPhonePipe pipe.
 import { USPhonePipe } from "./shared/us-phone.pipe";
 
-// 12/ Declare USPhonePipe in the NgModule metadata
+// 12/ Declare USPhonePipe in the NgModule decorator
 @NgModule({
     imports: [                  
         BrowserModule

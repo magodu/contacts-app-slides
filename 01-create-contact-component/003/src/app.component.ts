@@ -1,6 +1,6 @@
 import {Component} from '@angular/core'
 
-// 7/ Changes in the Component metadata
+// 7/ Changes in the Component decorator
 @Component({
     selector: 'my-app',
     // Put the template in an external file 

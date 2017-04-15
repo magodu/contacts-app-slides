@@ -14,7 +14,7 @@ import { AddEditContactComponent } from './add-edit-contact.component';
 import { ContactService } from "./shared/contact.service";
 import { USPhonePipe } from "./shared/us-phone.pipe";
  
- // 17/ Add FormsModule to NgModule metadata
+ // 17/ Add FormsModule to NgModule decorator
 @NgModule({
     imports: [                  
         BrowserModule,

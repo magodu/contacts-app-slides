@@ -3,7 +3,7 @@
 // Imports
 import {Component} from '@angular/core'
 
-// 10/ Component metadata
+// 10/ Component decorator
 @Component({
     // This selector has to be unique in all application
     selector: 'my-app',

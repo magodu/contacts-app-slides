@@ -5,7 +5,7 @@ import { Contact } from "./shared/contact";
 import { ContactService } from "./shared/contact.service";
 
 
-// 6/ Add to component metadata the changeDetection property
+// 6/ Add to component decorator metadata the changeDetection property
 @Component({
 	selector: 'app-contacts-list',
 	templateUrl: 'src/contacts-list.component.html',

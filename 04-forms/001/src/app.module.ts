@@ -13,7 +13,7 @@ import { AddEditContactComponent } from './add-edit-contact.component';
 import { ContactService } from "./shared/contact.service";
 import { USPhonePipe } from "./shared/us-phone.pipe";
  
-// 16/ Declare Component in NgModule metadata
+// 16/ Declare Component in NgModule decorator
 @NgModule({
     imports: [                  
         BrowserModule,

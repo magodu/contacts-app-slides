@@ -14,7 +14,7 @@ import { AddEditContactComponent } from './add-edit-contact.component';
 import { ContactService } from "./shared/contact.service";
 import { USPhonePipe } from "./shared/us-phone.pipe";
 
-// 18/ Add ReactiveFormsModule to NgModule metadata
+// 18/ Add ReactiveFormsModule to NgModule decorator
 @NgModule({
     imports: [                  
         BrowserModule,

@@ -6,7 +6,7 @@ import {BrowserModule} from '@angular/platform-browser'
 
 import { AppComponent }         from './app.component';
 
-// 10/ Module metadata
+// 10/ Module decorator
 @NgModule({
     imports: [                    // Import modules
         BrowserModule

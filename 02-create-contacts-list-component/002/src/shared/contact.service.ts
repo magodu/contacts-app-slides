@@ -8,7 +8,7 @@ import { Injectable } from '@angular/core';
 import { Contact } from "./contact";
 
 
-// Services metadata 
+// Services decorator 
 @Injectable()
 
 export class ContactService {

@@ -10,7 +10,7 @@ import { AppComponent }         from './app.component';
 // Import contact component.
 import { ContactComponent } from './contact.component';
 
-// 11/ Declare ContactComponent in the NgModule metadata
+// 11/ Declare ContactComponent in the NgModule decorator
 @NgModule({
     imports: [                  
         BrowserModule
